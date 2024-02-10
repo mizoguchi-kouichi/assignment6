@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class helloCotroller {
 
-    @GetMapping("/hello")
-        public String hello(){
-        return "hello world";
+    @GetMapping("/student")
+        public student getstudet(){
+        return new student("溝口光一",23,"大分県");
     }
 
 }
